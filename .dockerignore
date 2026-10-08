@@ -1,14 +1,19 @@
 # Only files required by the production API enter the Docker context.
 **
 !services/
+services/**
 !services/backend/
+services/backend/**
 !services/backend/*.mjs
 !services/backend/admin.html
 !services/backend/admin.js
 !services/backend/Dockerfile
 !tooling/
+tooling/**
 !tooling/registry.mjs
 !games/
+games/**
 !games/*/
+games/*/**
 !games/*/game.json
 !site.config.json
