@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "download_date": "2026-10-06",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "license_text_url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+  "license_file": "LICENSE-CC0-1.0.txt",
+  "sources": [
+    {
+      "id": "outer-space-loop",
+      "title": "Outer Space Loop",
+      "author": "wipics",
+      "page_url": "https://opengameart.org/content/outer-space-loop",
+      "download_url": "https://opengameart.org/sites/default/files/outer_space_2.mp3",
+      "original": "originals/outer-space-loop-wipics.mp3",
+      "license": "CC0-1.0",
+      "license_evidence": "evidence/outer-space-loop-source.html",
+      "selection_basis": "Original author's ambient/synths/space/loop tags; not auditioned.",
+      "derivatives": [
+        "selected/music.mp3",
+        "selected/music.ogg"
+      ],
+      "processing": "Trim tail silence after 68.598s; rotate a 0.6s linear crossfade across the loop seam; gain 0.55; transcode. Output PCM length 67.998s; compressed container duration may include padding."
+    },
+    {
+      "id": "kenney-sci-fi",
+      "title": "Sci-fi Sounds 1.0",
+      "author": "Kenney",
+      "page_url": "https://kenney.nl/assets/sci-fi-sounds",
+      "corroborating_author_page": "https://opengameart.org/content/sci-fi-sounds",
+      "download_url": "https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip",
+      "original": "originals/kenney-sci-fi-sounds.zip",
+      "license": "CC0-1.0",
+      "license_evidence": "evidence/kenney-sci-fi-source.html",
+      "supplied_license": "originals/kenney-sci-fi-sounds/License.txt",
+      "derivatives": [
+        "selected/launch.wav",
+        "selected/explosion.wav",
+        "selected/thruster.wav"
+      ],
+      "processing": "forceField_000 = launch; explosionCrunch_000 = explosion; lossless PCM WAV transcodes. spaceEngineSmall_000 = thruster, 0.05s linear overlap crossfade at seam, output 4.95s."
+    },
+    {
+      "id": "kenney-interface",
+      "title": "Interface Sounds 1.0",
+      "author": "Kenney",
+      "page_url": "https://kenney.nl/assets/interface-sounds",
+      "download_url": "https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip",
+      "original": "originals/kenney-interface-sounds.zip",
+      "license": "CC0-1.0",
+      "license_evidence": "evidence/kenney-interface-source.html",
+      "supplied_license": "originals/kenney-interface-sounds/License.txt",
+      "derivatives": [
+        "selected/ui.wav"
+      ],
+      "processing": "click_001.ogg transcoded to mono 44.1kHz PCM WAV."
+    }
+  ],
+  "verification": {
+    "author_license_pages_checked": true,
+    "ffmpeg_decode_checked": true,
+    "actual_audio_audition_performed": false,
+    "limitation": "Selection based on creator descriptions, filenames, waveform/silence metrics, and decoder validation. No subjective listening or no-vocals verification performed."
+  },
+  "files": [
+    {
+      "path": "LICENSE-CC0-1.0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "evidence/kenney-interface-source.html",
+      "bytes": 17942,
+      "sha256": "4bab3e1660c662504886cb82d25777fb557f81b208f55a1792b67b88a8785551"
+    },
+    {
+      "path": "evidence/kenney-sci-fi-source.html",
+      "bytes": 17203,
+      "sha256": "69f4a55235683b1c8c3c1bd34b678f8e3b29081a9bfa64004a9d9938297e5950"
+    },
+    {
+      "path": "evidence/outer-space-loop-source.html",
+      "bytes": 23612,
+      "sha256": "90014e2bacc353a8239ab5b57f73235136ae93d65fc4555a53916e1a4b2ef5d8"
+    },
+    {
+      "path": "originals/kenney-interface-sounds/Audio/click_001.ogg",
+      "bytes": 4876,
+      "sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+      "duration_seconds": 0.100023,
+      "audio": {
+        "codec_name": "vorbis",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    },
+    {
+      "path": "originals/kenney-interface-sounds/License.txt",
+      "bytes": 574,
+      "sha256": "f7966c773bbed0eca6a9c75081c44a178b38eae112724dbb5fdfbd4192d118a9"
+    },
+    {
+      "path": "originals/kenney-interface-sounds.zip",
+      "bytes": 834536,
+      "sha256": "f2193d072726d6758a5f7871b2dcc54dcce0d5c35c6f0a62f92549b327c81232"
+    },
+    {
+      "path": "originals/kenney-sci-fi-sounds/Audio/explosionCrunch_000.ogg",
+      "bytes": 28274,
+      "sha256": "4b597d658d0ae101f0a030fbeea5fc3a4292ab85f017470a8254a8e7959cbd69",
+      "duration_seconds": 0.77746,
+      "audio": {
+        "codec_name": "vorbis",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    },
+    {
+      "path": "originals/kenney-sci-fi-sounds/Audio/forceField_000.ogg",
+      "bytes": 25672,
+      "sha256": "c2916f2a062c8ddd1aca2826d134fe90847037db31342726ffb0f9097afe339c",
+      "duration_seconds": 0.954014,
+      "audio": {
+        "codec_name": "vorbis",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    },
+    {
+      "path": "originals/kenney-sci-fi-sounds/Audio/spaceEngineSmall_000.ogg",
+      "bytes": 116880,
+      "sha256": "2bec8ff75d81f0c37a6b78bd63beea6c70375e49ee30b0bbe7f38d654d576831",
+      "duration_seconds": 5.0,
+      "audio": {
+        "codec_name": "vorbis",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    },
+    {
+      "path": "originals/kenney-sci-fi-sounds/Audio/thrusterFire_000.ogg",
+      "bytes": 201216,
+      "sha256": "0fdc474d93f209debf1fc4ea77765a669dcb7676db31b4d8a0a509685bccf374",
+      "duration_seconds": 5.0,
+      "audio": {
+        "codec_name": "vorbis",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    },
+    {
+      "path": "originals/kenney-sci-fi-sounds/License.txt",
+      "bytes": 571,
+      "sha256": "a9767b25c3533f69d03af136480efad08efba19a9f0d89616992b34c79fd6186"
+    },
+    {
+      "path": "originals/kenney-sci-fi-sounds.zip",
+      "bytes": 5875104,
+      "sha256": "119340f351a5098ad814f78719438c0da355a9ce8a4c8a3af6a8d48aa3d49e04"
+    },
+    {
+      "path": "originals/outer-space-loop-wipics.mp3",
+      "bytes": 1681785,
+      "sha256": "a47fd0a3b89b697203b7b3bdbaedd6c02f1aae663a723f4287f3c1181c37115e",
+      "duration_seconds": 69.903708,
+      "audio": {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    },
+    {
+      "path": "selected/explosion.wav",
+      "bytes": 68650,
+      "sha256": "e12e2c22f8ed07618b22a3252264659582a2bf484f62e9a4fc4a0c4cc8449a80",
+      "duration_seconds": 0.77746,
+      "audio": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    },
+    {
+      "path": "selected/launch.wav",
+      "bytes": 84222,
+      "sha256": "69265e7043c307b8b5ed55b2f7a0cdad8ce61dd8517821dfdcff91fca294c1e0",
+      "duration_seconds": 0.954014,
+      "audio": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    },
+    {
+      "path": "selected/music.mp3",
+      "bytes": 1089244,
+      "sha256": "b34042ac281f0ca620eaf7723280e54723b4ee2150033d1efa707d08a397eb50",
+      "duration_seconds": 67.998005,
+      "audio": {
+        "codec_name": "mp3",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    },
+    {
+      "path": "selected/music.ogg",
+      "bytes": 905926,
+      "sha256": "6ce2c71c32d29457d8c2439c47a323eb3ac7e647746714c3232b382ba2f81f7b",
+      "duration_seconds": 67.998005,
+      "audio": {
+        "codec_name": "vorbis",
+        "sample_rate": "44100",
+        "channels": 2
+      }
+    },
+    {
+      "path": "selected/thruster.wav",
+      "bytes": 436668,
+      "sha256": "491a14fcf014be6696562f27a87a2d06a62a8fbddb7ad87bed327dedb1123ac6",
+      "duration_seconds": 4.95,
+      "audio": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    },
+    {
+      "path": "selected/ui.wav",
+      "bytes": 8644,
+      "sha256": "1fec3e5137f200902c882ac527527e1da85fc916d40d3e7f74387370092805b1",
+      "duration_seconds": 0.09712,
+      "audio": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    }
+  ],
+  "evidence_sanitization": "2026-10-08: redacted transient anonymous theme/form tokens in outer-space-loop-source.html; author, source and license evidence retained."
+}

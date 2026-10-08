@@ -1,0 +1,30 @@
+{
+  "id": "signal-tap",
+  "slug": "signal-tap",
+  "version": "0.1.1",
+  "status": "example",
+  "title": {
+    "en": "Signal Tap",
+    "zh": "信号点击"
+  },
+  "description": {
+    "en": "A small integration example: tap ten signals.",
+    "zh": "接入验证示例：点击十次信号，完成一轮。"
+  },
+  "score": {
+    "unit": "hits",
+    "buckets": [
+      3,
+      5,
+      10
+    ]
+  },
+  "milestones": [
+    {
+      "id": "five-hits",
+      "value": 5
+    }
+  ],
+  "causes": [],
+  "legacyV1": false
+}

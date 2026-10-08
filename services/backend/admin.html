@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Game Lab · 数据后台</title>
+    <style>
+      body {
+        background: #07131c;
+        color: #dce9df;
+        font: 15px/1.6 system-ui;
+        max-width: 1120px;
+        margin: 36px auto;
+        padding: 0 20px;
+      }
+      h1,
+      h2 {
+        font-weight: 500;
+      }
+      input,
+      select,
+      button {
+        background: #162c32;
+        color: #dce9df;
+        border: 1px solid #486261;
+        padding: 10px;
+        border-radius: 5px;
+        font: inherit;
+        max-width: 100%;
+      }
+      button {
+        cursor: pointer;
+      }
+      label {
+        display: inline-grid;
+        gap: 4px;
+        margin: 8px;
+      }
+      section {
+        margin: 24px 0;
+      }
+      pre {
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: #102028;
+        padding: 18px;
+      }
+      #cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      article {
+        background: #142b2e;
+        padding: 18px;
+        min-width: 140px;
+      }
+      article strong {
+        display: block;
+        font-size: 28px;
+        color: #d1f68a;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        display: block;
+        overflow: auto;
+      }
+      td,
+      th {
+        padding: 10px;
+        border-bottom: 1px solid #486261;
+        text-align: left;
+      }
+      small {
+        color: #a4bbbb;
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Game Lab · 数据后台</h1>
+    <p>按游戏查看真实存储数据。示例与本地验收均在 Test；各游戏成绩与匿名访客分别统计。</p>
+    <form id="query">
+      <label>管理密钥<input id="token" type="password" autocomplete="off" required /></label
+      ><label
+        >游戏<select id="game">
+          <option value="orbital-drift">近星轨道</option>
+          <option value="signal-tap">信号点击 · 示例</option>
+          <option value="all">全部游戏 · 分别汇总</option>
+        </select></label
+      ><label>UTC 起始日<input id="from" type="date" required /></label
+      ><label>UTC 结束日<input id="to" type="date" required /></label
+      ><label
+        >环境<select id="environment">
+          <option value="production">Production · 正式</option>
+          <option value="test">Test · 测试</option>
+        </select></label
+      ><button>查看汇总</button><button type="button" id="logout">清除密钥与结果</button>
+    </form>
+    <p id="status" role="status"></p>
+    <div id="result" hidden>
+      <p id="range"></p>
+      <div id="cards"></div>
+      <section>
+        <h2>每日 / 多游戏概览</h2>
+        <div id="daily"></div>
+      </section>
+      <section>
+        <h2>来源</h2>
+        <div id="sources"></div>
+      </section>
+      <section>
+        <h2>转化与阶段目标</h2>
+        <div id="metrics"></div>
+      </section>
+      <section>
+        <h2>结束原因与成绩分布</h2>
+        <div id="scores"></div>
+      </section>
+      <section>
+        <h2>分享动作</h2>
+        <div id="shares"></div>
+      </section>
+      <p>
+        会话按开始日归组，时长取累计最大值。导出按事件发生日筛选。跨游戏访客不能直接相加作为独立人数。
+      </p>
+      <button id="ndjson">导出 NDJSON</button> <button id="csv">导出 CSV</button>
+      <pre id="raw"></pre>
+    </div>
+    <script src="/admin.js"></script>
+  </body>
+</html>

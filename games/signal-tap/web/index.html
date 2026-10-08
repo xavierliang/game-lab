@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <title>信号点击 · Signal Tap</title>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">GAME LAB / INTEGRATION EXAMPLE</p>
+      <h1>信号点击</h1>
+      <p class="intro">点击十次信号，完成这一轮。<br />这是验证多游戏接入的小示例。</p>
+      <div class="readout"><span id="score">0 / 10</span><span id="time">0.0s</span></div>
+      <button id="signal" aria-label="点击信号" disabled><span></span></button>
+      <p id="mode" role="status">准备开始</p>
+      <p id="milestone" aria-live="polite">阶段目标：点击 5 次</p>
+      <div class="actions">
+        <button id="start">开始</button><button id="pause" disabled>暂停</button
+        ><button id="share" hidden>分享成绩</button>
+      </div>
+      <section id="sharing" hidden>
+        <img id="preview" alt="本轮成绩卡 PNG" />
+        <div class="actions">
+          <button id="system" disabled>系统分享</button
+          ><a id="download" download="signal-tap-score.png">下载 PNG</a
+          ><button id="copy" hidden>复制链接</button>
+        </div>
+        <input id="link" aria-label="手动复制游戏链接" readonly hidden />
+        <p id="share-status" role="status"></p>
+      </section>
+      <details>
+        <summary>数据与隐私</summary>
+        <p>
+          示例始终标记
+          Test。匿名统计包括来源、开玩、点击阶段、结束和分享，不记录个人输入。可关闭统计继续游玩。
+        </p>
+        <label><input type="checkbox" id="tracking" />允许匿名统计</label>
+      </details>
+      <footer>本机记录与近星轨道分开保存。<span id="best"></span></footer>
+    </main>
+    <script src="./game-config.js"></script>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

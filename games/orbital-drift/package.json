@@ -1,0 +1,20 @@
+{
+  "name": "@game-lab/orbital-drift",
+  "version": "1.2.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build --config vite.config.ts",
+    "check": "node scripts/check-game.mjs && node scripts/check-audio.mjs && node scripts/check-interface.mjs"
+  },
+  "dependencies": {
+    "@game-lab/services": "1.0.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "lucide-react": "1.31.0",
+    "@base-ui/react": "1.7.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.6.0"
+  }
+}

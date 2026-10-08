@@ -1,0 +1,165 @@
+:root {
+  font-family: Arial, 'PingFang SC', sans-serif;
+  background: #102627;
+  color: #eff4e9;
+  color-scheme: dark;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 34px 24px;
+  text-align: center;
+}
+.eyebrow {
+  color: #aaceb6;
+  letter-spacing: 0.13em;
+  font: 11px monospace;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 22px 0 12px;
+}
+.intro {
+  color: #a7bfb4;
+  line-height: 1.8;
+  font-size: 14px;
+}
+.readout {
+  display: flex;
+  justify-content: center;
+  gap: 44px;
+  font: 28px monospace;
+  margin: 26px 0;
+}
+#signal {
+  width: 156px;
+  height: 156px;
+  border: 1px solid #b9dda755;
+  border-radius: 50%;
+  background: #284940;
+  display: inline-grid;
+  place-items: center;
+  touch-action: manipulation;
+}
+#signal span {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: #ccebad;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #ccebad33;
+}
+#signal:active:not(:disabled) {
+  background: #3b5e43;
+}
+#signal:disabled {
+  opacity: 0.4;
+}
+#mode {
+  margin: 20px 0 6px;
+}
+#milestone {
+  color: #a8d4a7;
+  font-size: 13px;
+  min-height: 20px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+button,
+a {
+  font: 14px Arial;
+  cursor: pointer;
+}
+button:not(#signal),
+a {
+  padding: 11px 16px;
+  border: 1px solid #a9cbb655;
+  border-radius: 6px;
+  background: #1e3a34;
+  color: #ecf3e6;
+  text-decoration: none;
+  min-height: 44px;
+}
+#start {
+  background: #c9e8ab;
+  color: #1a3224;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #e7faca;
+  outline-offset: 4px;
+}
+[hidden] {
+  display: none !important;
+}
+details {
+  margin-top: 28px;
+  text-align: left;
+  font-size: 13px;
+  color: #bed0c4;
+  line-height: 1.7;
+}
+summary {
+  cursor: pointer;
+}
+details label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+footer {
+  color: #809e91;
+  font-size: 11px;
+  margin: 28px 0;
+}
+#sharing {
+  padding-top: 16px;
+  border-top: 1px solid #b6d9c533;
+}
+#preview {
+  width: 100%;
+  border-radius: 8px;
+}
+#link {
+  width: 100%;
+  padding: 12px;
+  background: #0c1b1d;
+  color: #bed0c4;
+  border: 1px solid #7ba18e;
+}
+#share-status {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #b6c9bd;
+}
+@media (max-width: 380px) {
+  main {
+    padding: 25px 18px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .readout {
+    margin: 20px 0;
+  }
+  #signal {
+    height: 136px;
+    width: 136px;
+  }
+}

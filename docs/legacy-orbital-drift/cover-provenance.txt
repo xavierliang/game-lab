@@ -1,0 +1,6 @@
+Orbital Drift itch.io cover
+Generated: 2026-10-06 with built-in imagegen.
+References: public/assets/ship.png and public/assets/planet.png.
+Brief: deep navy/teal space; cream triangular ship with cyan cockpit and twin thrusters; turquoise cratered planet; dotted orbit, sparse meteors; title ORBITAL DRIFT; subtitle A GRAVITY SURVIVAL GAME; lime/ivory typography.
+Use: promotional cover, not a gameplay screenshot.
+Project copy: games/orbital-drift/publishing/itch-cover.png

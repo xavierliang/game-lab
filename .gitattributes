@@ -1,0 +1,6 @@
+# Preserve immutable provenance, license text and rollback bytes exactly.
+baselines/** -text -diff
+games/orbital-drift/audio-sources/** -text -whitespace
+games/orbital-drift/vendor/** -text -whitespace
+games/orbital-drift/public/licenses/** -text -whitespace
+docs/legacy-orbital-drift/** -text -whitespace

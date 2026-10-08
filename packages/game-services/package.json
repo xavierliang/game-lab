@@ -1,0 +1,13 @@
+{
+  "name": "@game-lab/services",
+  "version": "1.0.1",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./analytics": "./src/analytics.ts",
+    "./attribution": "./src/attribution.ts",
+    "./config": "./src/config.ts",
+    "./sharing": "./src/sharing.ts"
+  }
+}

@@ -1,0 +1,68 @@
+Orbital Drift — audio source records
+Downloaded and licenses checked: 2026-10-06
+
+RECOMMENDED RELEASE FILES
+selected/music.mp3 — Outer Space Loop by wipics; 67.998 seconds, stereo.
+selected/music.ogg — Same prepared music loop, optional Vorbis alternative.
+selected/launch.wav — forceField_000 from Kenney Sci-fi Sounds; 0.954 seconds.
+selected/explosion.wav — explosionCrunch_000 from Kenney Sci-fi Sounds; 0.777 seconds.
+selected/thruster.wav — spaceEngineSmall_000 from Kenney Sci-fi Sounds; 4.95-second loop.
+selected/ui.wav — click_001 from Kenney Interface Sounds; 0.097 seconds.
+
+Use MP3 music and the four WAV effects for a compact, broadly decodable game package.
+The OGG version is optional. Keep the source archives out of the public game ZIP;
+retain them with this record for provenance. The release needs its audio credits
+and a copy of LICENSE-CC0-1.0.txt, not the downloaded website HTML.
+
+ORIGINAL AUTHOR SOURCES AND LICENSES
+Outer Space Loop — wipics
+https://opengameart.org/content/outer-space-loop
+Download: https://opengameart.org/sites/default/files/outer_space_2.mp3
+Author's source page: CC0 / Public Domain. Source tags include Ambient, synths,
+outer space and loop. Original MP3 is retained in originals/.
+
+Sci-fi Sounds 1.0 — Kenney
+https://kenney.nl/assets/sci-fi-sounds
+https://opengameart.org/content/sci-fi-sounds
+Download: https://kenney.nl/media/pages/assets/sci-fi-sounds/6b296f9ecf-1677589334/kenney_sci-fi-sounds.zip
+Official page and archive License.txt: Creative Commons Zero, CC0.
+
+Interface Sounds 1.0 — Kenney
+https://kenney.nl/assets/interface-sounds
+Download: https://kenney.nl/media/pages/assets/interface-sounds/fa43c1dd4d-1677589452/kenney_interface-sounds.zip
+Official page and archive License.txt: Creative Commons Zero, CC0.
+
+CC0 full legal text: LICENSE-CC0-1.0.txt
+https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt
+This third-party audio license does not determine the license of the game's code.
+
+SUGGESTED VOLUNTARY CREDITS
+Music: "Outer Space Loop" by wipics (OpenGameArt.org), CC0 1.0.
+Sound effects: Kenney.nl — Sci-fi Sounds and Interface Sounds, CC0 1.0.
+Music and thruster loops edited for Orbital Drift.
+
+PROCESSING AND VALIDATION
+prepare-audio.py reproduces all selected files using FFmpeg. Original audio,
+and original archive licenses remain unmodified under originals/. Source evidence
+is retained under evidence/; transient anonymous theme/form tokens in the
+OpenGameArt snapshot were redacted before publication (see manifest.json). manifest.json records sources, download date, transformations,
+format metadata and SHA-256 hashes for original, evidence and selected files.
+
+The original music contains about 1.3 seconds of trailing silence; the prepared
+loop removes this and uses a 0.6-second linear overlap at the seam. Its gain is
+reduced to 0.55 for headroom. The thruster loop uses a 0.05-second overlap.
+All prepared files decode successfully with FFmpeg and retain 44.1 kHz sampling.
+
+No actual listening was performed by the asset-research agent. Selection is
+based on the authors' descriptions and asset names, waveform/silence metrics,
+and technical decoding checks. The music's subjective fit and absence of vocals
+have not been verified by listening. A seam crossfade is an editing step, not
+a claim that the musical phrasing has been auditioned as seamless.
+preview.html is provided for human listening before final sound-mix sign-off.
+
+INTEGRATION STARTING POINTS
+Music should stay quiet behind the engine and effects. Consider music gain
+0.25–0.4, UI gain 0.25, explosion gain 0.45, and thruster gain 0.1–0.2;
+these are initial values to adjust during actual play/listening, not a tested mix.
+Start sound only after a user gesture, provide separate music and SFX toggles,
+and stop the thruster during pause, game over, focus loss and hidden-tab states.

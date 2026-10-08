@@ -1,0 +1,48 @@
+Orbital Drift
+
+Turn your ship. Tap your thrusters. Outlast the meteor shower.
+
+Gravity pulls. Momentum carries. The next meteor is already on its way.
+
+Orbital Drift is a small, atmospheric space-survival game built around orbital motion. You start with enough speed to circle the planet. Point your ship, make short engine burns, and find a path through an increasingly busy meteor shower.
+
+Your first challenge: survive 30 seconds.
+Then aim for 60 and 120 seconds. Celebrate each milestone and keep a real PNG of your flight.
+
+• Instant browser play, no account required
+• Gravity-based movement and optional flight-path prediction
+• Personal best saved in this browser
+• 30 / 60 / 120-second goals and downloadable PNG score cards
+• System sharing where supported, with download and link fallbacks
+• A looping space soundtrack and engine, launch, and collision sounds
+• Separate music and sound-effect controls
+• English and Simplified Chinese
+
+CONTROLS
+← / → or A / D — Turn
+↑ or W — Thrust
+Enter — Start
+P or Space — Pause / resume
+R — Restart
+M — Mute / unmute
+On touchscreens, use the on-screen arrows and thrust button.
+
+Turning changes your heading, not your momentum. Try short burns instead of holding thrust. Avoid the planet, meteors, and the dotted edge of the flight zone.
+
+Best times and preferences are stored in this browser. Switching tabs pauses the flight. No online leaderboard or account system.
+
+DATA & PRIVACY
+The game may collect anonymous flight events, time counters and campaign labels when the operator enables analytics. No email, typed text, fingerprint or full referring URL is collected. Turn it off in Settings → Data & privacy. Received events expire after 90 days. Offline HTML never sends analytics. Screen size affects play; scores are personal records, not cross-device rankings.
+
+CREDITS
+Music: “Outer Space Loop” by wipics — CC0.
+https://opengameart.org/content/outer-space-loop
+Sound effects: Sci-fi Sounds and Interface Sounds by Kenney — CC0.
+https://kenney.nl/assets/sci-fi-sounds
+https://kenney.nl/assets/interface-sounds
+Music and engine loops edited for the game. Full audio credits and license text are included.
+
+The game’s space artwork and promotional cover were created with AI image generation. Game code and interface were developed with AI assistance.
+
+FEEDBACK
+How long did your first flight last? Was there a moment when the controls clicked for you—or a moment when they felt confusing? Leave a comment with your browser/device and what happened.

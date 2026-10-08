@@ -1,0 +1,42 @@
+{
+  "id": "orbital-drift",
+  "slug": "orbital-drift",
+  "version": "1.2.1",
+  "status": "ready",
+  "title": {
+    "en": "Orbital Drift",
+    "zh": "近星轨道"
+  },
+  "description": {
+    "en": "Keep your orbit. Outlast the meteor shower.",
+    "zh": "转动船头，轻点推进，躲过下一颗陨石。"
+  },
+  "score": {
+    "unit": "seconds",
+    "buckets": [
+      30,
+      60,
+      120
+    ]
+  },
+  "milestones": [
+    {
+      "id": "survive-30",
+      "value": 30
+    },
+    {
+      "id": "survive-60",
+      "value": 60
+    },
+    {
+      "id": "survive-120",
+      "value": 120
+    }
+  ],
+  "causes": [
+    "planet",
+    "boundary",
+    "asteroid"
+  ],
+  "legacyV1": true
+}

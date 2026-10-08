@@ -1,0 +1,15 @@
+{
+  "siteTitle": "Game Lab",
+  "publicOrigin": "",
+  "analyticsEndpoint": "",
+  "recommendedPrefix": "play",
+  "includeExamples": false,
+  "games": {
+    "orbital-drift": {
+      "officialUrl": ""
+    },
+    "signal-tap": {
+      "officialUrl": ""
+    }
+  }
+}

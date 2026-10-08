@@ -1,0 +1,27 @@
+ORBITAL DRIFT — AUDIO CREDITS
+
+Music: "Outer Space Loop" by wipics
+https://opengameart.org/content/outer-space-loop
+License: CC0 1.0 Universal
+Modified: tail silence removed, 0.6-second loop-seam crossfade, gain adjusted,
+and transcoded to MP3. Runtime file: audio/music.mp3.
+
+Sci-fi Sounds 1.0 by Kenney
+https://kenney.nl/assets/sci-fi-sounds
+License: CC0 1.0 Universal
+forceField_000: launch.wav
+explosionCrunch_000: explosion.wav
+spaceEngineSmall_000: thruster.wav (50ms loop-seam crossfade)
+Transcoded from OGG to WAV.
+
+Interface Sounds 1.0 by Kenney
+https://kenney.nl/assets/interface-sounds
+License: CC0 1.0 Universal
+click_001: ui.wav; transcoded from OGG to WAV.
+
+CC0: https://creativecommons.org/publicdomain/zero/1.0/
+Full legal text included in CC0-1.0.txt.
+Source/author/license checked on 2026-10-06.
+
+The CC0 declaration applies to the credited audio, not to the entire game.
+Space images were created using AI image generation for this project.
