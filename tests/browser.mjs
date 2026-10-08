@@ -126,7 +126,7 @@ try {
   );
   const orbitEvents = events().filter((e) => e.game_id === 'orbital-drift');
   assert.ok(orbitEvents.some((e) => e.data.cause === 'boundary'));
-  assert.ok(orbitEvents.every((e) => e.schema === 2 && e.sdk_version === '1.0.1'));
+  assert.ok(orbitEvents.every((e) => e.schema === 2 && e.sdk_version === '1.0.2'));
   report.checks.push(
     'Orbital: real play, pause, new run IDs, offline retry, PNG, share cancellation, narrow/landscape, v2 flight adapter',
   );
@@ -184,8 +184,8 @@ try {
   await page.frameLocator('iframe').locator('main[data-mode="playing"]').waitFor();
   report.checks.push('Migrated game loads with relative assets in an iframe');
   for (const [id, version] of [
-    ['orbital-drift', '1.2.1'],
-    ['signal-tap', '0.1.1'],
+    ['orbital-drift', '1.2.2'],
+    ['signal-tap', '0.1.2'],
   ]) {
     await page.goto('file://' + resolve(`release/${id}/${version}/preview.html`));
     if (id === 'orbital-drift')

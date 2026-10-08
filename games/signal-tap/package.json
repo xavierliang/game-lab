@@ -1,12 +1,12 @@
 {
   "name": "@game-lab/signal-tap",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "vite build --config vite.config.ts"
   },
   "dependencies": {
-    "@game-lab/services": "1.0.1"
+    "@game-lab/services": "1.0.2"
   }
 }

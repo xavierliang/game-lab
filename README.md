@@ -24,9 +24,9 @@ npm run dev
 ## 目录与边界
 
 ```text
-games/orbital-drift/        近星轨道 1.2.1；玩法、双语、声音、真实 PNG
-games/signal-tap/          信号点击 0.1.1；第二游戏接入示例（Test-only）
-packages/game-services/    版本 1.0.1；跟踪、离线队列、归因、分享公共功能
+games/orbital-drift/        近星轨道 1.2.2；玩法、双语、声音、真实 PNG
+games/signal-tap/          信号点击 0.1.2；第二游戏接入示例（Test-only）
+packages/game-services/    版本 1.0.2；跟踪、离线队列、归因、分享公共功能
 apps/portal/              游戏集合首页
 services/backend/        多游戏接收、SQLite、受保护汇总与导出
 tooling/                  游戏登记、公共构建与测试工具

@@ -1,6 +1,6 @@
 import { attribution, type Attribution } from './attribution';
 import type { ReleaseConfig } from './config';
-export const SDK_VERSION = '1.0.1';
+export const SDK_VERSION = '1.0.2';
 export const EVENT_NAMES = [
   'session_start',
   'load_success',
@@ -105,7 +105,9 @@ export class Analytics {
     this.first = this.current;
     this.storageKey =
       KEY + ':' + config.gameId + ':' + config.environment + ':' + config.analyticsEndpoint;
-    this.enabled = !!config.analyticsEndpoint && !optedOut();
+    const disabled = optedOut();
+    this.enabled = !!config.analyticsEndpoint && !disabled;
+    if (disabled) this.setEnabled(false);
     if (this.enabled) this.begin();
     window.addEventListener('focus', this.focus);
     window.addEventListener('blur', this.blur);

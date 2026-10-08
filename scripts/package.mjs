@@ -100,7 +100,7 @@ async function main() {
           game_id: game.id,
           version: game.version,
           schema: 2,
-          sdk_version: '1.0.1',
+          sdk_version: '1.0.2',
           files: manifest,
           artifacts,
         },

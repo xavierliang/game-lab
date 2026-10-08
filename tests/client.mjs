@@ -196,6 +196,16 @@ const b = new Analytics({ ...config, gameId: 'signal-tap', gameVersion: '0.1.0' 
 await new Promise((r) => setImmediate(r));
 assert.equal(b.enabled, false, 'Site-wide opt-out applies across games');
 b.destroy();
+// Legacy opt-out may happen while every v2 tab is closed. A later load must
+// discard the old queues before any future opt-in can restore them.
+localStorage.removeItem('game-lab:analytics-optout');
+localStorage.setItem(client.storageKey + ':queue:closed', JSON.stringify(sent.slice(0, 1)));
+localStorage.setItem('orbital-analytics-v1:test:endpoint:queue:closed', '[]');
+const afterLegacyOptOut = new Analytics(config);
+assert.equal(afterLegacyOptOut.enabled, false);
+assert.equal(localStorage.getItem(client.storageKey + ':queue:closed'), null);
+assert.equal(localStorage.getItem('orbital-analytics-v1:test:endpoint:queue:closed'), null);
+afterLegacyOptOut.destroy();
 const oldSession = restored.session;
 restored.setEnabled(true);
 assert.notEqual(restored.session, oldSession, 'Opt-in starts new anonymous session');
